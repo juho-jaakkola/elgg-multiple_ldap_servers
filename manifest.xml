@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Multiple LDAP servers</name>
+	<id>multiple_ldap_servers</id>
+	<author>Juho Jaakkola</author>
+	<version>1.0</version>
+	<category>authentication</category>
+	<description>Provides authentication using multiple LDAP servers</description>
+	<website>http://elgg.org/</website>
+	<license>GNU General Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.9</version>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>ldap</name>
+	</requires>
+	<requires>
+		<type>plugin</type>
+		<name>ldap_auth</name>
+	</requires>
+	<requires>
+		<type>priority</type>
+		<priority>after</priority>
+		<plugin>ldap_auth</plugin>
+	</requires>
+</plugin_manifest>
